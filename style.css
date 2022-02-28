@@ -1,0 +1,38 @@
+
+
+/* NAVBAR */
+
+
+.navbar-custom {
+    background-color: dodgerblue;
+}
+
+
+/* FOOTER */
+
+
+.footer-custom {
+    background-color: darkslateblue;
+}
+
+#linkedin-link {
+    border-radius: 50%;
+    background-color: #0082ca;
+    border: none;
+}
+
+#github-link {
+    border-radius: 50%;
+    background-color: #333333;
+    border: none;
+}
+
+#linkedin-link:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 12px #0082ca;
+}
+
+#github-link:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 12px #333333;
+}
