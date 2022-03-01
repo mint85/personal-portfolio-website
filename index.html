@@ -122,41 +122,42 @@
             <hr class="project-divider">
         </div>
         <div class="container" id="contact">
-            <form class="row row-cols-lg-auto g-3 align-items-center" name="contact-form" accept-charset="utf-8"
+            <form class="row row-cols-lg-auto g-3 justify-content-center flex-column" name="contact-form" accept-charset="utf-8"
                 action="https://formspree.io/f/moqrwjkw" method="POST">
+                <input type="text" name="_gotcha" style="display:none" />
                 <label for="name">Name</label>
                 <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
                 <label for="email-address">Email Address</label>
-                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-                <label for="telephone">Telephone Number (Optional)</label>
-                <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
                 <label for="message">Message</label>
                 <textarea rows="6" name="message" id="message" placeholder="Type your message here..."
                     required=""></textarea>
-                <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
-                <input type="submit" value="Submit">
+                <input type="hidden" name="_subject" id="email-subject" value="Form Submission">
+                <input type="submit" value="Send">
             </form>
         </div>
     </main>
-    <div class="row">
-        <footer class="text-center mt-auto pt-3 footer-custom">
-            <div class="container-fluid">
-                <section class="mb-4">
-                    <!-- Linkedin -->
-                    <a class="btn btn-primary btn-floating m-1 me-3" id="linkedin-link"
+    <div class="container-fluid">
+        <div class="row">
+            <footer class="text-center mt-auto pt-3 footer-custom">
+                <div class="container-fluid">
+                    <section class="mb-4">
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1 me-3" id="linkedin-link"
                         href="https://www.linkedin.com/in/allenmjones/" target="_blank" role="button"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <!-- Github -->
-                    <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
+                        class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
                         href="https://github.com/mint85/photo-wall" target="_blank" role="button"><i
-                            class="fab fa-github"></i></a>
-                </section>
-            </div>
-            <div class="text-center pb-3">
-                © 2022 Copyright:
-                <a class="text-reset fw-bold" href="https://www.allenjones.dev">Allen Jones</a>
-            </div>
-        </footer>
+                        class="fab fa-github"></i></a>
+                    </section>
+                </div>
+                <div class="text-center pb-3">
+                    © 2022 Copyright:
+                    <a class="text-reset fw-bold" href="https://www.allenjones.dev">Allen Jones</a>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 
