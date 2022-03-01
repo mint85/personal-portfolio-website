@@ -13,6 +13,10 @@ html {
 
 /* PROJECTS */
 
+.project-divider-top {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem; 
+}
 
 .project-divider {
     margin: 4rem 0;

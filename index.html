@@ -19,11 +19,11 @@
     <title>Allen Jones</title>
 </head>
 
-<body>
+<body class="pt-5" id="top-area">
     <header>
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom">
             <div class="container-fluid">
-                <a href="#main-content-area" class="navbar-brand">Allen Jones | Software Engineer</a>
+                <a href="#top-area" class="navbar-brand">Allen Jones | Software Engineer</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavItems"
                     aria-controls="navbarNavItems" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,12 +39,15 @@
                         <li class="nav-item">
                             <a href="#contact" class="nav-link">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="https://docs.google.com/document/d/11Hd6FWb6cveE6U4cVRPEOMJS1jD6Noi-IZeMZiwiCvY/export?format=pdf" class="nav-link">Resume</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main id="main-content-area" class="mt-5">
+    <main id="main-content-area" class="">
         <div id="hero">
             test
         </div>
@@ -52,13 +55,14 @@
             test
         </div>
         <div class="container" id="projects">
-            <hr class="project-divider">
+            <h2>Projects</h2>
+            <hr class="project-divider-top">
             <div class="row">
                 <div class="col-md-7">
-                    <h2 class="project-heading">
+                    <h3 class="project-heading mt-3">
                         Photo Wall
-                    </h2>
-                    <p class="lead">
+                    </h3>
+                    <p class="lead mb-3">
                         A Python/Django application that lets users upload their favorite photos to create a beautiful
                         digital 'wall' of photos.
                     </p>
@@ -75,9 +79,9 @@
                         alt="Random Jeopardy Clues Screenshot" class="img-fluid mx-auto" width="500" height="500">
                 </div>
                 <div class="col-md-7">
-                    <h2 class="project-heading">
+                    <h3 class="project-heading mt-3">
                         Hello Project
-                    </h2>
+                    </h3>
                     <p class="lead">
                         MERN stack web app with CRUD operations that allows users to host and display ideas for their
                         next coding project using an interactive database.
@@ -90,10 +94,10 @@
             <hr class="project-divider">
             <div class="row">
                 <div class="col-md-7">
-                    <h2 class="project-heading">
+                    <h3 class="project-heading">
                         Disc Golf Course Explorer
-                    </h2>
-                    <p class="lead">
+                    </h3>
+                    <p class="lead mb-3">
                         Full-Stack project using MongoDB, Express, and EJS Templates to display a catalogue of disc golf
                         courses. There is detailed information
                         about each course, including course photos.
@@ -111,9 +115,9 @@
                         alt="Random Jeopardy Clues Screenshot" class="img-fluid mx-auto" width="500" height="500">
                 </div>
                 <div class="col-md-7">
-                    <h2 class="project-heading">
+                    <h3 class="project-headin mt-3">
                         Random Jeopardy Clues
-                    </h2>
+                    </h3>
                     <p class="lead">
                         Project that uses the jService API to display random Jeopardy clues & answers.
                     </p>
