@@ -30,13 +30,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavItems">
                     <ul class="navbar-nav">
-                        <li class="nav-item">    
+                        <li class="nav-item">
                             <a href="#" class="nav-link">About</a>
                         </li>
-                        <li class="nav-item">    
+                        <li class="nav-item">
                             <a href="#" class="nav-link">Projects</a>
                         </li>
-                        <li class="nav-item">    
+                        <li class="nav-item">
                             <a href="#" class="nav-link">Contact</a>
                         </li>
                     </ul>
@@ -59,29 +59,30 @@
                         Photo Wall
                     </h2>
                     <p class="lead">
-                        A Python/Django application that lets users upload their favorite photos to create a beautiful digital 'wall' of photos.
+                        A Python/Django application that lets users upload their favorite photos to create a beautiful
+                        digital 'wall' of photos.
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img src="https://github.com/mint85/photo-wall/raw/master/main_app/static/images/screenshot1.jpg" 
-                    alt="Random Jeopardy Clues Screenshot" 
-                    class="img-fluid mx-auto" width="500" height="500">
+                    <img src="https://github.com/mint85/photo-wall/raw/master/main_app/static/images/screenshot1.jpg"
+                        alt="Random Jeopardy Clues Screenshot" class="img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="project-divider">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="https://camo.githubusercontent.com/8c8fb416b2348cd5d65e1c9272f73b200bc15a11dd4a0c868cef595196b02b2c/68747470733a2f2f692e696d6775722e636f6d2f37576c397969572e706e67" 
-                    alt="Random Jeopardy Clues Screenshot" 
-                    class="img-fluid mx-auto" width="500" height="500">
+                    <img src="https://camo.githubusercontent.com/8c8fb416b2348cd5d65e1c9272f73b200bc15a11dd4a0c868cef595196b02b2c/68747470733a2f2f692e696d6775722e636f6d2f37576c397969572e706e67"
+                        alt="Random Jeopardy Clues Screenshot" class="img-fluid mx-auto" width="500" height="500">
                 </div>
                 <div class="col-md-7">
                     <h2 class="project-heading">
                         Hello Project
                     </h2>
                     <p class="lead">
-                        MERN stack web app with CRUD operations that allows users to host and display ideas for their next coding project using an interactive database.
-                        This was a 3-person group project. I was the team's Scrum Master, and I contributed to the Ideas page as well as the CSS
+                        MERN stack web app with CRUD operations that allows users to host and display ideas for their
+                        next coding project using an interactive database.
+                        This was a 3-person group project. I was the team's Scrum Master, and I contributed to the Ideas
+                        page as well as the CSS
                     </p>
                 </div>
 
@@ -93,22 +94,21 @@
                         Disc Golf Course Explorer
                     </h2>
                     <p class="lead">
-                        Full-Stack project using MongoDB, Express, and EJS Templates to display a catalogue of disc golf courses. There is detailed information
+                        Full-Stack project using MongoDB, Express, and EJS Templates to display a catalogue of disc golf
+                        courses. There is detailed information
                         about each course, including course photos.
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img src="https://github.com/mint85/disc-golf-course-explorer/raw/main/public/images/screen1.png" 
-                    alt="Random Jeopardy Clues Screenshot" 
-                    class="img-fluid mx-auto" width="500" height="500">
+                    <img src="https://github.com/mint85/disc-golf-course-explorer/raw/main/public/images/screen1.png"
+                        alt="Random Jeopardy Clues Screenshot" class="img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="project-divider">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="https://github.com/mint85/Jeopardy-jService-API-Project/raw/main/images/screen1.png" 
-                    alt="Random Jeopardy Clues Screenshot" 
-                    class="img-fluid mx-auto" width="500" height="500">
+                    <img src="https://github.com/mint85/Jeopardy-jService-API-Project/raw/main/images/screen1.png"
+                        alt="Random Jeopardy Clues Screenshot" class="img-fluid mx-auto" width="500" height="500">
                 </div>
                 <div class="col-md-7">
                     <h2 class="project-heading">
@@ -121,20 +121,44 @@
             </div>
             <hr class="project-divider">
         </div>
-        <div class="container" id="contact">
-            <form class="row row-cols-lg-auto g-3 justify-content-center flex-column" name="contact-form" accept-charset="utf-8"
-                action="https://formspree.io/f/moqrwjkw" method="POST">
-                <input type="text" name="_gotcha" style="display:none" />
-                <label for="name">Name</label>
-                <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
-                <label for="email-address">Email Address</label>
-                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-                <label for="message">Message</label>
-                <textarea rows="6" name="message" id="message" placeholder="Type your message here..."
-                    required=""></textarea>
-                <input type="hidden" name="_subject" id="email-subject" value="Form Submission">
-                <input type="submit" value="Send">
-            </form>
+        <div class="container mb-5" id="contact">
+            <div class="row">
+                <div class="col-sm-8">
+                    <form class="d-flex flex-column" name="contact-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/moqrwjkw" method="POST">
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">        
+                                <span class="input-group-text">
+                                    Name
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="name" id="full-name" placeholder="First and Last Name" required="">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">        
+                                <span class="input-group-text">
+                                    Email Address
+                                </span>
+                            </div>
+                            <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">        
+                                <span class="input-group-text" style="height: 100%">
+                                    Message
+                                </span>
+                            </div>
+                            <textarea class="form-control" name="message" id="message" placeholder="Type your message here..."
+                            required=""></textarea>
+                        </div>
+                            <input type="hidden" name="_subject" id="email-subject" value="Form Submission">
+                        <div class="col-12 mt-2">
+                            <input type="submit" value="Send" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <div class="container-fluid">
@@ -144,12 +168,12 @@
                     <section class="mb-4">
                         <!-- Linkedin -->
                         <a class="btn btn-primary btn-floating m-1 me-3" id="linkedin-link"
-                        href="https://www.linkedin.com/in/allenmjones/" target="_blank" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>
+                            href="https://www.linkedin.com/in/allenmjones/" target="_blank" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <!-- Github -->
                         <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
-                        href="https://github.com/mint85/photo-wall" target="_blank" role="button"><i
-                        class="fab fa-github"></i></a>
+                            href="https://github.com/mint85/photo-wall" target="_blank" role="button"><i
+                                class="fab fa-github"></i></a>
                     </section>
                 </div>
                 <div class="text-center pb-3">
