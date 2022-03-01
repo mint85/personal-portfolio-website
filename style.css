@@ -3,7 +3,9 @@
 } */
 
 /* NAVBAR */
-
+html {
+    scroll-behavior: smooth;
+}
 
 .navbar-custom {
     background-color: dodgerblue;
