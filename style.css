@@ -8,10 +8,20 @@ html {
 }
 
 .navbar-custom {
-    background-color: dodgerblue;
+    background-color: rgb(43,124,170);
 }
 
+/* HERO AREA */
+
+#hero {
+
+    background: rgb(43,124,170);
+    background: linear-gradient(180deg, rgba(43,124,170,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+
 /* PROJECTS */
+
 
 .project-divider-top {
     margin-top: 1.5rem;
@@ -23,11 +33,20 @@ html {
 }
 
 
+/* SKILLS */
+
+
+.skill-card {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 /* FOOTER */
 
 
 .footer-custom {
-    background-color: darkslateblue;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(43,124,170,1) 100%);
 }
 
 #linkedin-link {
