@@ -1,12 +1,19 @@
-body {
-    height: 100vh;
-}
+/* body {
+    min-height: 100vh;
+} */
 
 /* NAVBAR */
 
 
 .navbar-custom {
     background-color: dodgerblue;
+}
+
+/* PROJECTS */
+
+
+.project-divider {
+    margin: 5rem 0;
 }
 
 
