@@ -21,7 +21,7 @@ body {
 #hero {
 
     background: rgb(43,124,170);
-    background: linear-gradient(180deg, rgba(43,124,170,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(43,124,170,1) 5%, rgba(255,255,255,0) 100%);
 }
 #hi {
     font-family: 'Play', sans-serif;
@@ -42,6 +42,11 @@ body {
 
 /* SKILLS */
 
+
+.skills-divider {
+    margin-top:  1.5rem;
+    margin: 5rem 0;
+}
 
 .skill-card {
     border: 1px solid black;
