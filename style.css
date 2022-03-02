@@ -14,6 +14,11 @@ body {
     background-color: rgb(43,124,170);
 }
 
+.navbar-ul {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
 
 /* HERO AREA */
 
