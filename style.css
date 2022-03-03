@@ -82,6 +82,12 @@ body {
     border: none;
 }
 
+#resume-link {
+    border-radius: 50%;
+    background-color: #803030;
+    border: none;
+}
+
 #linkedin-link:hover {
     transition: 0.5s;
     box-shadow: 0 0 12px #0082ca;
@@ -90,4 +96,9 @@ body {
 #github-link:hover {
     transition: 0.5s;
     box-shadow: 0 0 12px #333333;
+}
+
+#resume-link:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 12px #803030;
 }
