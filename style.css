@@ -25,7 +25,7 @@ body {
 
 
 #hero {
-
+    
     background: rgb(43,124,170);
     background: linear-gradient(180deg, rgba(43,124,170,1) 5%, rgba(255,255,255,0) 100%);
 }
@@ -45,6 +45,17 @@ body {
 
 .project-divider {
     margin: 4rem 0;
+}
+
+#live-site-link {
+    border-radius: 50%;
+    background-color: #333333;
+    border: none;
+}
+
+#live-site-link:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 12px blue;
 }
 
 
