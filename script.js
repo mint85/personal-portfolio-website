@@ -1,3 +1,6 @@
+// Typing Effect credit: https://codepen.io/CheeseTurtle/pen/AYJYqE
+// I made slight changes to the original code to suit my individual use case.
+
 let TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
