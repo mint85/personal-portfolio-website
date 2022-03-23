@@ -57,3 +57,12 @@ let TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
+// End of Typing Effect
+
+
+// Closes Navbar hamburger menu on click action from user
+
+$('.nav-link').click(function() {
+  $('.navbar-toggler').click();
+});
