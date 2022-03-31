@@ -20,6 +20,33 @@ body {
     font-weight: 900;
 }
 
+.nav-link {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+  
+.nav-link:hover {
+    color: #000;
+}
+  
+.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 1.5px;
+    bottom: 0;
+    left: 5%;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+  
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
 
 /* HERO AREA */
 
@@ -35,7 +62,7 @@ body {
 }
 
 #AllenFace {
-    
+    width: 20%;
 }
 
 
