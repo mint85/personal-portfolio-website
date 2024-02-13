@@ -128,39 +128,7 @@
         <div class="container" id="projects">
             <h2>Project Portfolio</h2>
             <hr class="project-divider-top">
-            <div class="row">
-                <div class="col-md-7">
-                    <h3 class="project-heading mt-3">
-                        Photo Wall
-                    </h3>
-                    <p class="lead mb-3">
-                        A Python/Django application that lets users upload their favorite photos to create a beautiful
-                        digital 'wall' of photos.
-                    </p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="live-site-link"
-                                href="https://photo-wall-amj.herokuapp.com/" target="_blank" role="button"><i
-                                    class="fa-solid fa-globe"></i></a>
-                            Live Site
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
-                                href="https://github.com/mint85/photo-wall" target="_blank" role="button"><i
-                                    class="fab fa-github"></i></a>
-                            Code
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <a href="https://photo-wall-amj.herokuapp.com/" target="_blank">
-                        <img src="https://github.com/mint85/photo-wall/raw/master/main_app/static/images/screenshot1.jpg"
-                            alt="Photo Wall Screenshot" class="img-fluid mx-auto" width="500" height="500">
-                    </a>
-                </div>
-            </div>
-            <hr class="project-divider">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-5">
                     <a href="https://hello-project.netlify.app/" target="_blank">
                         <img src="https://camo.githubusercontent.com/8c8fb416b2348cd5d65e1c9272f73b200bc15a11dd4a0c868cef595196b02b2c/68747470733a2f2f692e696d6775722e636f6d2f37576c397969572e706e67"
@@ -196,9 +164,13 @@
                         </li>
                     </ul>
                 </div>
-
-            </div>
-            <hr class="project-divider">
+            </div> 
+            <hr class="project-divider"> --> 
+            <!-- If anyone is looking at this source code, the above project was a group project that we worked on in my coding bootcamp cohort. 
+                Unfortunately, the backend database that was being used was created by a classmate, and it has stopped working. I have not been 
+                able to contact them to try to get it working again, and I do not have the credentials to try to fix it myself. If I can get it 
+                working again, I will add this back to my Portfolio. The main page is still there, but the Ideas page depends upon the database 
+                to serve the data within. -->
             <div class="row">
                 <div class="col-md-7">
                     <h3 class="project-heading">
@@ -206,8 +178,7 @@
                     </h3>
                     <p class="lead mb-3">
                         Full-Stack project using MongoDB, Express, and EJS Templates to display a catalogue of disc golf
-                        courses. There is detailed information
-                        about each course, including course photos.
+                        courses. There is detailed information about each course, including course photos.
                     </p>
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -245,7 +216,7 @@
                         Random Jeopardy Clues
                     </h3>
                     <p class="lead">
-                        This project uses jQuery to access the jService API to display random Jeopardy clues & answers.
+                        This project uses jQuery to access the Jepp API to display random Jeopardy clues & answers.
                     </p>
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -261,6 +232,42 @@
                             Code
                         </li>
                     </ul>
+                </div>
+            </div>
+            <hr class="project-divider">
+            <div class="row">
+                <div class="col-md-7">
+                    <h3 class="project-heading mt-3">
+                        Photo Wall
+                    </h3>
+                    <p class="lead mb-3">
+                        A Python/Django application that lets users upload their favorite photos to create a beautiful
+                        digital 'wall' of photos. Photo Wall stores user's photos in a linked AWS S3 bucket. 
+                    </p>
+                    <p class="lead mb-3">
+                        Users can create their own account to get started, or you may click the "View Example Photo Wall" 
+                        link in the nav bar to view a premade example photowall.
+                    </p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="btn btn-primary btn-floating m-1 ms-3" id="live-site-link"
+                                href="https://photo-wall-amj.herokuapp.com/" target="_blank" role="button"><i
+                                    class="fa-solid fa-globe"></i></a>
+                            Live Site
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
+                                href="https://github.com/mint85/photo-wall" target="_blank" role="button"><i
+                                    class="fab fa-github"></i></a>
+                            Code
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <a href="https://photo-wall-amj.herokuapp.com/" target="_blank">
+                        <img src="https://github.com/mint85/photo-wall/raw/master/main_app/static/images/screenshot1.jpg"
+                            alt="Photo Wall Screenshot" class="img-fluid mx-auto" width="500" height="500">
+                    </a>
                 </div>
             </div>
             <hr class="skills-divider" id="skills-area">
