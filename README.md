@@ -1,8 +1,53 @@
-# My Personal Portfolio Site
-## https://allenjones.dev
+# allenjones.dev
 
-<br>
-Visit my portfolio site to view a showcase of the projects I have created, view my resume, and to get in contact with me.
-<br>
-<br>
-I am always open to any invitations to chat about potential job opportunities, career advice, general questions, feedback, or anything else in the world of software development and technology!
+Personal portfolio site for Allen Jones, Technical Support Engineer. Live at
+https://www.allenjones.dev.
+
+## Stack
+
+Vanilla HTML, CSS, and JavaScript. No framework, no build step, no package.json.
+Hosted on Netlify, deploying from the `master` branch with no build command.
+
+Run it locally:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+## Files
+
+- `index.html`: home page (hero, projects, skills, contact)
+- `about.html`: about page
+- `404.html`: custom not-found page, served automatically by Netlify
+- `thanks.html`: no-JavaScript fallback success page for the contact form
+- `style.css`, `script.js`: the only stylesheet and script
+- `images/icons/`: self-hosted skill icons (see `images/icons/LICENSE.txt`)
+- `robots.txt`, `sitemap.xml`
+
+## Assets to replace
+
+These files are labeled placeholders. Overwrite them with the real image using the same
+filename and no markup changes are needed:
+
+- `images/projects/simple-tip.png` (1280x800 recommended)
+- `images/projects/summit-benchmark.png` (1280x800 recommended)
+- `images/about/casual.jpg` (optional casual photo, 4:3)
+- `images/about/cat-1.jpg`, `cat-2.jpg`, `cat-3.jpg` (square)
+- `images/about/cat-404.jpg` (3:2, used on the 404 page)
+- `resume.pdf` at the repo root (linked from the contact section; 404s until added)
+
+## Contact form
+
+The form uses Netlify Forms. Form detection must be enabled once in the Netlify UI
+(Site configuration > Forms > Enable form detection) for submissions to be collected.
+
+## Credits
+
+The hero typing effect is adapted from a CodePen by CheeseTurtle:
+https://codepen.io/CheeseTurtle/pen/AYJYqE
+
+The accent color is `rebeccapurple`.
+
+This project has been developed with AI assistance (Claude Code).
