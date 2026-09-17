@@ -23,6 +23,7 @@
   --accent-soft: rgba(102, 51, 153, 0.18);
   --term-green: #3fb950;       /* functional cues only */
   --hero-wash: rgba(102, 51, 153, 0.10);
+  --logo-filter: invert(1);   /* the laptop mark is black line art */
   --term-amber: #d29922;
   --danger: #ff7b72;
   --on-accent: #ffffff;
@@ -44,6 +45,7 @@
   --accent-soft: rgba(102, 51, 153, 0.10);
   --term-green: #15703a;
   --hero-wash: rgba(102, 51, 153, 0.14);
+  --logo-filter: none;
   --term-amber: #7d5300;
   --danger: #b3261e;
   --on-accent: #ffffff;
@@ -214,8 +216,9 @@ main {
 }
 
 .nav__logo-mark {
-  width: 36px;
-  height: 24px;
+  width: 40px;
+  height: auto;
+  filter: var(--logo-filter);
 }
 
 .nav__logo-pipe {
