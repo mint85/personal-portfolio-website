@@ -27,7 +27,6 @@
   --danger: #ff7b72;
   --on-accent: #ffffff;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-  --logo-filter: invert(1);
   --mono-icon-filter: none;
 }
 
@@ -49,7 +48,6 @@
   --danger: #b3261e;
   --on-accent: #ffffff;
   --shadow: 0 10px 30px rgba(26, 30, 36, 0.10);
-  --logo-filter: none;
   --mono-icon-filter: invert(1) hue-rotate(180deg);
 }
 
@@ -209,10 +207,34 @@ main {
   border-radius: 6px;
 }
 
-.nav__logo img {
-  height: 40px;
-  width: auto;
-  filter: var(--logo-filter);
+.nav__logo {
+  gap: 0.6rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav__logo-mark {
+  width: 36px;
+  height: 24px;
+}
+
+.nav__logo-pipe {
+  width: 2px;
+  height: 30px;
+  background: var(--accent-text);
+  border-radius: 1px;
+}
+
+.nav__logo-text {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.nav__logo:hover .nav__logo-text {
+  color: var(--accent-text);
 }
 
 .nav__controls {
@@ -414,6 +436,7 @@ main {
   max-width: 62ch;
   color: var(--text-muted);
   margin-bottom: 2.5rem;
+  text-wrap: balance;
 }
 
 /* --------------------------------------------------------------------------
@@ -1014,8 +1037,14 @@ textarea.form__input {
 .about-photos {
   display: grid;
   gap: 1rem;
-  position: sticky;
-  top: 88px;
+}
+
+/* Sticky photos only beside the text; stacked on mobile they must scroll normally. */
+@media (min-width: 860px) {
+  .about-photos {
+    position: sticky;
+    top: 88px;
+  }
 }
 
 .photo-frame {
@@ -1038,6 +1067,11 @@ textarea.form__input {
 
 .photo-frame--wide img {
   aspect-ratio: 4 / 3;
+}
+
+.photo-frame--tall img {
+  aspect-ratio: 3 / 4;
+  object-position: center 40%;
 }
 
 .prose {

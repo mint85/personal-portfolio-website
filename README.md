@@ -33,10 +33,10 @@ filename and no markup changes are needed:
 
 - `images/projects/simple-tip.png` (1280x800 recommended)
 - `images/projects/summit-benchmark.png` (1280x800 recommended)
-- `images/about/casual.jpg` (optional casual photo, 4:3)
+- `images/about/casual.jpg` (casual photo, 3:4 portrait)
 - `images/about/cat-01.jpg` through `cat-10.jpg` (square, polaroid pile)
 - `images/about/cat-404.jpg` (3:2, used on the 404 page)
-- `resume.pdf` at the repo root (linked from the contact section; 404s until added)
+- `Allen_Jones_Resume.pdf` at the repo root (linked from the contact section)
 
 ## Contact form
 
