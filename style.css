@@ -74,6 +74,7 @@ body {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.65;
+  font-variant-ligatures: none; /* keeps $> from rendering as a JetBrains Mono ligature */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -300,6 +301,7 @@ main {
 .theme-switch__icon {
   width: 22px;
   height: 22px;
+  object-fit: contain;
   opacity: 0.35;
   transition: opacity 0.2s, filter 0.2s;
 }
@@ -607,9 +609,15 @@ main {
 
 .terminal__body {
   flex: 1;
-  padding: 1.25rem 2rem 2.25rem 1.4rem;
+  padding: 1.25rem 2rem 1.5rem 1.4rem;
   min-height: 17rem;
   overflow-x: auto;
+}
+
+@media (min-width: 900px) {
+  .hero .terminal {
+    margin-block: 1.5rem;
+  }
 }
 
 .term-line {
@@ -1049,22 +1057,70 @@ textarea.form__input {
   margin-top: 3rem;
 }
 
-.cat-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.polaroids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0;
+  padding: 1rem 0.5rem 2rem;
 }
 
-.cat-grid figure {
+.polaroid {
+  width: clamp(140px, 22vw, 210px);
+  margin: 0 -0.6rem;
+  transition: transform 0.25s ease, z-index 0s;
+  transform: rotate(var(--tilt, 0deg));
+}
+
+.polaroid figure {
   margin: 0;
+  padding: 0.55rem 0.55rem 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
 }
 
-.cat-grid figcaption {
+.polaroid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+}
+
+.polaroid figcaption {
   margin-top: 0.5rem;
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
+  text-align: center;
 }
+
+.polaroid:hover,
+.polaroid:focus-within {
+  transform: rotate(0deg) translateY(-8px) scale(1.06);
+  z-index: 2;
+  position: relative;
+}
+
+.polaroid:hover figure,
+.polaroid:focus-within figure {
+  border-color: var(--accent);
+  box-shadow: var(--shadow), 0 0 30px var(--accent-glow);
+}
+
+/* Tilts repeat every ten prints, so any number of photos works. */
+.polaroid:nth-child(10n + 1) { --tilt: -6deg; }
+.polaroid:nth-child(10n + 2) { --tilt: 4deg; margin-top: 1.5rem; }
+.polaroid:nth-child(10n + 3) { --tilt: -2deg; }
+.polaroid:nth-child(10n + 4) { --tilt: 7deg; margin-top: 0.75rem; }
+.polaroid:nth-child(10n + 5) { --tilt: -4deg; margin-top: 2rem; }
+.polaroid:nth-child(10n + 6) { --tilt: 3deg; }
+.polaroid:nth-child(10n + 7) { --tilt: -7deg; margin-top: 1.25rem; }
+.polaroid:nth-child(10n + 8) { --tilt: 5deg; }
+.polaroid:nth-child(10n + 9) { --tilt: -3deg; margin-top: 1.75rem; }
+.polaroid:nth-child(10n + 10) { --tilt: 6deg; margin-top: 0.5rem; }
 
 /* --------------------------------------------------------------------------
    10. 404 and thanks pages
@@ -1237,6 +1293,12 @@ html.js .reveal.is-visible {
   .skill:hover,
   .contact-link:hover,
   .btn--primary:hover {
+    transform: none;
+  }
+
+  .polaroid,
+  .polaroid:hover,
+  .polaroid:focus-within {
     transform: none;
   }
 }
