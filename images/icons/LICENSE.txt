@@ -31,3 +31,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Added for the skills rebuild:
+  devicon (MIT): django.svg (plain variant, recolored), express.svg (recolored),
+  postgresql.svg, react.svg, graphql.svg
+  Original artwork for this site: rest.svg, soap.svg, gateway.svg
