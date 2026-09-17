@@ -1,9 +1,9 @@
 Third-party icons in this folder
 
 devicon (https://github.com/devicons/devicon), MIT License, Copyright (c) 2015 konpa:
-  bash.svg, javascript.svg, python.svg, linux.svg, html5.svg, css3.svg, git.svg,
+  bash.svg, javascript.svg, python.svg, linux.png, html5.svg, css3.svg, git.svg,
   nodejs.svg, mongodb.svg, postman.svg, netlify.svg
-  linux.svg is the "plain" variant with its fill color changed for the dark theme.
+  linux.png is the "original" colored Tux rasterized at 88x88 (the SVG is 194 KB).
 
 Simple Icons (https://simpleicons.org), CC0 1.0 Universal:
   jmeter.svg (Apache JMeter), fill color added for the dark theme.
