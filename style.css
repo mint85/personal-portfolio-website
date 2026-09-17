@@ -22,6 +22,7 @@
   --accent-glow: rgba(102, 51, 153, 0.40);
   --accent-soft: rgba(102, 51, 153, 0.18);
   --term-green: #3fb950;       /* functional cues only */
+  --hero-wash: rgba(102, 51, 153, 0.10);
   --term-amber: #d29922;
   --danger: #ff7b72;
   --on-accent: #ffffff;
@@ -32,17 +33,18 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --bg: #ffffff;
-  --bg-elevated: #f4f4f7;
+  --bg: #f4f3f8;
+  --bg-elevated: #ebe9f2;
   --surface: #ffffff;
-  --border: #e2e2e8;
+  --border: #d9d6e4;
   --text: #1a1e24;
-  --text-muted: #55606b;
+  --text-muted: #525c68;
   --accent: #663399;
   --accent-text: #663399;
-  --accent-glow: rgba(102, 51, 153, 0.18);
+  --accent-glow: rgba(102, 51, 153, 0.20);
   --accent-soft: rgba(102, 51, 153, 0.10);
-  --term-green: #1a7f37;
+  --term-green: #15703a;
+  --hero-wash: rgba(102, 51, 153, 0.14);
   --term-amber: #7d5300;
   --danger: #b3261e;
   --on-accent: #ffffff;
@@ -276,11 +278,75 @@ main {
   height: 20px;
 }
 
-/* Theme toggle shows the icon for the theme you would switch TO. */
-.theme-toggle .icon--sun { display: none; }
-.theme-toggle .icon--moon { display: block; }
-[data-theme="light"] .theme-toggle .icon--sun { display: block; }
-[data-theme="light"] .theme-toggle .icon--moon { display: none; }
+/* Theme switch: moon on the left (dark), sun on the right (light). */
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 42px;
+  padding: 0 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.theme-switch:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.theme-switch__icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.35;
+  transition: opacity 0.2s, filter 0.2s;
+}
+
+.theme-switch__icon--moon {
+  opacity: 1;
+  filter: drop-shadow(0 0 4px rgba(255, 210, 63, 0.55));
+}
+
+[data-theme="light"] .theme-switch__icon--moon {
+  opacity: 0.35;
+  filter: none;
+}
+
+[data-theme="light"] .theme-switch__icon--sun {
+  opacity: 1;
+}
+
+.theme-switch__track {
+  position: relative;
+  width: 38px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--border);
+  transition: background-color 0.25s;
+}
+
+.theme-switch__knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent-text);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s;
+}
+
+[data-theme="light"] .theme-switch__track {
+  background: var(--accent);
+}
+
+[data-theme="light"] .theme-switch__knob {
+  background: #ffffff;
+  transform: translateX(18px);
+}
 
 .nav__toggle {
   display: none;
@@ -367,8 +433,10 @@ main {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: radial-gradient(var(--border) 1px, transparent 1.5px);
-  background-size: 26px 26px;
+  background-image:
+    linear-gradient(180deg, var(--hero-wash), transparent 55%),
+    radial-gradient(var(--border) 1px, transparent 1.5px);
+  background-size: 100% 100%, 26px 26px;
   -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
   mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
   opacity: 0.9;
@@ -399,7 +467,14 @@ main {
   .hero__grid {
     grid-template-columns: 1.05fr 1fr;
     gap: 4rem;
+    align-items: stretch;
   }
+}
+
+.hero__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero__prompt {
@@ -490,6 +565,8 @@ main {
 
 /* Terminal window */
 .terminal {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -529,8 +606,9 @@ main {
 }
 
 .terminal__body {
-  padding: 1.1rem 1.2rem 1.3rem;
-  min-height: 15rem;
+  flex: 1;
+  padding: 1.25rem 2rem 2.25rem 1.4rem;
+  min-height: 17rem;
   overflow-x: auto;
 }
 
@@ -720,7 +798,7 @@ main {
    7. Skills
    -------------------------------------------------------------------------- */
 .skill-group + .skill-group {
-  margin-top: 2.5rem;
+  margin-top: 3.25rem;
 }
 
 .skill-group__title {
@@ -728,13 +806,13 @@ main {
   font-size: 0.95rem;
   font-weight: 400;
   color: var(--term-green);
-  margin-bottom: 0.25rem;
+  margin: 0 0 1.25rem;
 }
 
 .skill-group__note {
   color: var(--text-muted);
   font-size: 0.95rem;
-  margin-bottom: 1.25rem;
+  margin: -0.75rem 0 1.25rem;
 }
 
 .skill-list {
@@ -775,47 +853,6 @@ main {
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
-}
-
-.chip-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.9rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface);
-  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.9rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.chip:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
-}
-
-.chip--api {
-  font-size: 1rem;
-  padding: 0.65rem 1.1rem;
-  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
-  background: var(--accent-soft);
-  font-weight: 600;
-}
-
-.chip--api .caret {
-  color: var(--term-green);
-}
-
-.chip--muted {
-  color: var(--text-muted);
-  font-size: 0.85rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -1056,21 +1093,71 @@ textarea.form__input {
 .site-footer {
   border-top: 1px solid var(--border);
   background: var(--bg-elevated);
-  padding-block: 2rem;
+  padding-block: 2.5rem 2rem;
+  font-size: 0.95rem;
 }
 
-.site-footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+.footer__grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 760px) {
+  .footer__grid {
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 3rem;
+  }
+}
+
+.footer__session {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.footer__cmd,
+.footer__out {
+  margin: 0;
+}
+
+.footer__out {
+  color: var(--text-muted);
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.35rem 2rem;
+}
+
+.footer__nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__nav a:hover {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
+
+.footer__meta {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: start;
+}
+
+@media (min-width: 760px) {
+  .footer__meta {
+    justify-items: end;
+    text-align: right;
+  }
 }
 
 .footer__text {
   margin: 0;
-  color: var(--text-muted);
-  font-size: 0.95rem;
+  color: var(--text);
 }
 
 .footer__text a {
@@ -1078,18 +1165,36 @@ textarea.form__input {
   font-weight: 600;
 }
 
-.footer__exit {
-  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.85rem;
+.footer__built {
+  margin: 0;
   color: var(--text-muted);
 }
 
-.footer__exit .caret {
-  color: var(--term-green);
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.back-to-top {
+.footer__top:hover {
+  border-color: var(--accent);
+  color: var(--accent-text);
+  box-shadow: 0 0 0 3px var(--accent-soft);
   text-decoration: none;
+}
+
+.footer__top .icon {
+  width: 1em;
+  height: 1em;
 }
 
 /* --------------------------------------------------------------------------

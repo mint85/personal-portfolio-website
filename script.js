@@ -1,6 +1,6 @@
 /* allenjones.dev v3
    Vanilla JS. Theme toggle, mobile nav, hero terminal, scroll reveal,
-   Netlify form submit, copyright year, 404 path, and one small tribute. */
+   Netlify form submit, copyright year, 404 path, and one small tribute easter egg. */
 (function () {
   'use strict';
 
@@ -11,11 +11,11 @@
      Theme toggle. The initial data-theme is set by the inline script in
      <head>; this only handles the button and persistence.
      --------------------------------------------------------------------- */
-  var toggle = document.querySelector('.theme-toggle');
+  var toggle = document.querySelector('.theme-switch');
   if (toggle) {
     var syncToggle = function () {
       var light = docEl.getAttribute('data-theme') === 'light';
-      toggle.setAttribute('aria-pressed', light ? 'true' : 'false');
+      toggle.setAttribute('aria-checked', light ? 'true' : 'false');
     };
     toggle.addEventListener('click', function () {
       var next = docEl.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
@@ -280,7 +280,7 @@
       'background:#1a1e24;color:#b794f6;padding:3px 8px;border-radius:0 4px 4px 0;font-family:monospace'
     );
     console.log(
-      'The accent color on this site is rebeccapurple, a CSS named color added in 2014 ' +
+      'The accent color on this site is one of my favorite colors called rebeccapurple, a CSS named color added in 2014 ' +
       'in memory of Rebecca Alison Meyer, who loved purple.\n' +
       'https://meyerweb.com/eric/thoughts/2014/06/19/rebeccapurple/'
     );
