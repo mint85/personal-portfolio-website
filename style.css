@@ -1194,13 +1194,18 @@ textarea.form__input {
 
 .polaroid img {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  height: auto;
   display: block;
   border-radius: 2px;
 }
 
+/* Landscape prints get a wider frame so every photo keeps its own orientation. */
+.polaroid--wide {
+  width: clamp(180px, 28vw, 260px);
+}
+
 .polaroid figcaption {
+  white-space: pre;
   margin-top: 0.5rem;
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.75rem;
