@@ -1238,7 +1238,6 @@ textarea.form__input {
    -------------------------------------------------------------------------- */
 .page-terminal {
   max-width: 760px;
-  margin-inline: auto;
 }
 
 .page-terminal .terminal__body {

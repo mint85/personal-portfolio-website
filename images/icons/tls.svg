@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" stroke="#e6e8eb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><title>TLS and keystores</title><circle cx="44" cy="52" r="24"/><circle cx="44" cy="52" r="7"/><path d="M61 69l46 46"/><path d="M92 100l12-12"/><path d="M104 112l12-12"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" stroke-linecap="round" stroke-linejoin="round"><title>TLS and certificates</title>
+  <!-- key ring -->
+  <circle cx="34" cy="34" r="18" stroke="#9aa3ad" stroke-width="7"/>
+  <!-- gold key -->
+  <g transform="rotate(35 46 46)" stroke="#f0b429" stroke-width="8">
+    <circle cx="46" cy="52" r="11"/>
+    <path d="M46 63v50"/>
+    <path d="M46 96h14"/><path d="M46 108h10"/>
+  </g>
+  <!-- purple key -->
+  <g transform="rotate(-25 46 46)" stroke="#b794f6" stroke-width="8">
+    <circle cx="46" cy="52" r="11"/>
+    <path d="M46 63v46"/>
+    <path d="M46 92h13"/><path d="M46 104h9"/>
+  </g>
+</svg>
