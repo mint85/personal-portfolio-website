@@ -1204,6 +1204,13 @@ textarea.form__input {
   width: clamp(180px, 28vw, 260px);
 }
 
+/* Very tall captures are trimmed to 2:3; --focus picks which part to keep. */
+.polaroid--trim img {
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: var(--focus, center);
+}
+
 .polaroid figcaption {
   white-space: pre;
   margin-top: 0.5rem;
@@ -1215,7 +1222,7 @@ textarea.form__input {
 
 .polaroid:hover,
 .polaroid:focus-within {
-  transform: rotate(0deg) translateY(-8px) scale(1.06);
+  transform: rotate(0deg) translateY(-10px) scale(1.16);
   z-index: 2;
   position: relative;
 }
