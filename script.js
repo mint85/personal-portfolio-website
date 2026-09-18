@@ -234,7 +234,8 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var submitBtn = form.querySelector('[type="submit"]');
-      if (status) { status.textContent = '> sending...'; status.classList.remove('form__status--error'); }
+      var endpoint = (status && status.getAttribute('data-endpoint')) || 'POST /contact';
+      if (status) { status.textContent = endpoint + ' ...'; status.classList.remove('form__status--error'); }
       if (submitBtn) { submitBtn.disabled = true; }
       var body = new URLSearchParams(new FormData(form)).toString();
       fetch('/', {
@@ -243,6 +244,7 @@
         body: body
       }).then(function (res) {
         if (!res.ok) { throw new Error('HTTP ' + res.status); }
+        if (status) { status.innerHTML = ''; status.textContent = endpoint + ' '; var ok = document.createElement('span'); ok.className = 'ok'; ok.textContent = '200 OK'; status.appendChild(ok); }
         form.hidden = true;
         if (success) {
           success.hidden = false;
@@ -252,12 +254,31 @@
       }).catch(function () {
         if (submitBtn) { submitBtn.disabled = false; }
         if (status) {
-          status.textContent = '[error] could not send. Try again, or email me via LinkedIn.';
+          status.textContent = endpoint + ' 502 Bad Gateway. Could not send; try again or reach me on LinkedIn.';
           status.classList.add('form__status--error');
         }
       });
     });
   }
+
+  /* ---------------------------------------------------------------------
+     Contact cards: play a tiny "request" when a link is clicked. The link
+     opens in a new tab, so this page stays put to show the 200.
+     --------------------------------------------------------------------- */
+  document.querySelectorAll('.contact-link').forEach(function (link) {
+    var badge = link.querySelector('.contact-link__status');
+    if (!badge) { return; }
+    link.addEventListener('click', function () {
+      link.classList.remove('is-ok');
+      link.classList.add('is-loading');
+      badge.textContent = '...';
+      setTimeout(function () {
+        link.classList.remove('is-loading');
+        link.classList.add('is-ok');
+        badge.textContent = '200 OK';
+      }, reduceMotion ? 0 : 420);
+    });
+  });
 
   /* ---------------------------------------------------------------------
      404 page: show the path that was requested.

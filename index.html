@@ -100,7 +100,7 @@
           <li><a class="nav__link" href="/#skills">Skills</a></li>
           <li><a class="nav__link" href="/#contact">Contact</a></li>
           <li><a class="nav__link" href="/about.html">About</a></li>
-          <li><a class="nav__link" href="https://docs.google.com/document/d/1oQmn7KsemHLATd0jl2mjA-tEn51FL3nlMG-nwJte0U0/export?format=pdf" target="_blank" rel="noopener">Resume <svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg><span class="sr-only">(PDF, opens in a new tab)</span></a></li>
+          <li><a class="nav__link" href="/Allen_Jones_Resume.pdf" target="_blank" rel="noopener">Resume <svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg><span class="sr-only">(PDF, opens in a new tab)</span></a></li>
         </ul>
         <button class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Light theme">
           <img class="theme-switch__icon theme-switch__icon--moon" src="/images/ui/dark-mode.png" alt="" width="22" height="22">
@@ -166,8 +166,8 @@
 
         <ul class="project-grid">
           <li class="project">
-            <a class="project__media" href="https://mint85.github.io/simple-tip/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-              <img src="/images/projects/simple-tip.png" alt="" width="1280" height="800" loading="lazy">
+            <a class="project__media project__media--phone" href="https://mint85.github.io/simple-tip/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" style="--shot: url(/images/projects/simple-tip.jpg)">
+              <img src="/images/projects/simple-tip.jpg" alt="" width="720" height="1416" loading="lazy">
             </a>
             <div class="project__body">
               <div class="project__head">
@@ -189,8 +189,8 @@
           </li>
 
           <li class="project">
-            <a class="project__media" href="https://summit-benchmark.netlify.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-              <img src="/images/projects/summit-benchmark.png" alt="" width="1280" height="800" loading="lazy">
+            <a class="project__media project__media--phone" href="https://summit-benchmark.netlify.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" style="--shot: url(/images/projects/summit-benchmark.jpg)">
+              <img src="/images/projects/summit-benchmark.jpg" alt="" width="720" height="1416" loading="lazy">
             </a>
             <div class="project__body">
               <div class="project__head">
@@ -283,6 +283,8 @@
             <li class="skill"><img class="skill__icon" src="/images/icons/postman.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Postman</span></li>
             <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/jmeter.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">JMeter</span></li>
             <li class="skill"><img class="skill__icon" src="/images/icons/netlify.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Netlify</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/salesforce.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Salesforce</span></li>
+            <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/tls.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">TLS / Certs</span></li>
           </ul>
         </div>
 
@@ -338,12 +340,12 @@
                 <textarea class="form__input" id="contact-message" name="message" required></textarea>
               </div>
               <div>
-                <button class="btn btn--primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#icon-send"/></svg>Send message</button>
+                <button class="btn btn--primary" type="submit"><span class="method method--on-accent" aria-hidden="true">POST</span>Send message</button>
               </div>
-              <p class="form__status" aria-live="polite"></p>
+              <p class="form__status" aria-live="polite" data-endpoint="POST /contact"></p>
             </form>
             <div class="form-success" id="form-success" hidden>
-              <p><span class="ok">[ok]</span> message sent</p>
+              <p><span class="ok">200 OK</span> message sent</p>
               <p>Thanks for reaching out. I read every message and will get back to you soon.</p>
             </div>
           </div>
@@ -351,19 +353,18 @@
           <div class="contact-links">
             <a class="contact-link" href="https://www.linkedin.com/in/allenmjones/" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
-              <span class="contact-link__text"><strong>LinkedIn</strong><small>linkedin.com/in/allenmjones</small></span>
+              <span class="contact-link__text"><strong>LinkedIn</strong><small><span class="method">GET</span> linkedin.com/in/allenmjones</small></span>
+              <span class="contact-link__status" aria-hidden="true"></span>
             </a>
             <a class="contact-link" href="https://github.com/mint85/" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
-              <span class="contact-link__text"><strong>GitHub</strong><small>github.com/mint85</small></span>
-            </a>
-            <a class="contact-link" href="https://docs.google.com/document/d/1oQmn7KsemHLATd0jl2mjA-tEn51FL3nlMG-nwJte0U0/export?format=pdf" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg>
-              <span class="contact-link__text"><strong>Resume</strong><small>latest version, PDF export</small></span>
+              <span class="contact-link__text"><strong>GitHub</strong><small><span class="method">GET</span> github.com/mint85</small></span>
+              <span class="contact-link__status" aria-hidden="true"></span>
             </a>
             <a class="contact-link" href="/Allen_Jones_Resume.pdf" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg>
-              <span class="contact-link__text"><strong>Allen_Jones_Resume.pdf</strong><small>static copy hosted on this site</small></span>
+              <span class="contact-link__text"><strong>Resume</strong><small><span class="method">GET</span> ~/docs/Allen_Jones_Resume.pdf</small></span>
+              <span class="contact-link__status" aria-hidden="true"></span>
             </a>
           </div>
         </div>

@@ -28,11 +28,9 @@ Then open http://localhost:8000.
 
 ## Assets to replace
 
-These files are labeled placeholders. Overwrite them with the real image using the same
+Remaining labeled placeholders. Overwrite them with the real image using the same
 filename and no markup changes are needed:
 
-- `images/projects/simple-tip.png` (1280x800 recommended)
-- `images/projects/summit-benchmark.png` (1280x800 recommended)
 - `images/about/casual.jpg` (casual photo, 3:4 portrait)
 - `images/about/cat-01.jpg` through `cat-10.jpg` (square, polaroid pile)
 - `images/about/cat-404.jpg` (3:2, used on the 404 page)
