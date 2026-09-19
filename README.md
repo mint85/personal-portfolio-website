@@ -1,33 +1,24 @@
 # allenjones.dev
 
-Personal portfolio site for Allen Jones, Technical Support Engineer. Live at
+My Personal portfolio website. Live at
 https://www.allenjones.dev.
+
+A showcase of my current technical skills and personal projects, as well as some info about who I am. And cat pictures. Lots of cat pictures. Even if you don't care about what I'm up to, check out the cat pictures.
 
 ## Stack
 
 Vanilla HTML, CSS, and JavaScript. No framework, no build step, no package.json.
-Dark default with a light theme toggle, persisted in `localStorage`. Hosted on Netlify,
-which deploys production automatically from the `master` branch with no build command.
+Dark by default with a light theme toggle, persisted in `localStorage`. 
 
-Run it locally:
+Hosted on Netlify.
 
-```bash
-python3 -m http.server 8000
-```
+## Screenshot
 
-Then open http://localhost:8000.
-
-## Making changes
-
-Do not push directly to `master`, since that publishes to the live site immediately. Work
-on a branch, preview it with a Netlify deploy preview (open a pull request against `master`),
-then merge once it looks right.
+![The allenjones.dev landing page: a dark, terminal-themed hero with the name, role, and an animated terminal window](images/screenshot-home.png)
 
 ## Contact form
 
-The form uses Netlify Forms. It is already set up: form detection is on and an email
-notification fires on each submission. If the form is ever recreated, re-enable both under
-the site's Forms settings in the Netlify UI.
+The contact form uses Netlify Forms. Form detection is on and an email notification fires on each submission. This deprecates the prior use of Formspree in the previous design.
 
 ## Credits
 
