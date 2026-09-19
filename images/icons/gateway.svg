@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" stroke-linecap="round" stroke-linejoin="round"><title>API Gateways</title>
+  <!-- gate -->
+  <g stroke="#9aa3ad" stroke-width="8">
+    <path d="M30 108V26"/><path d="M98 108V26"/><path d="M20 26h88"/>
+  </g>
+  <!-- request in -->
+  <g stroke="#b794f6" stroke-width="9">
+    <path d="M10 52h86"/><path d="M82 38l16 14-16 14"/>
+  </g>
+  <!-- response out -->
+  <g stroke="#3fb950" stroke-width="9">
+    <path d="M118 84H32"/><path d="M46 70L30 84l16 14"/>
+  </g>
+</svg>

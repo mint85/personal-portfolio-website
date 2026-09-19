@@ -1,479 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Allen Jones | Software Engineer Portfolio" />
-    <meta name="title" property="og:title" content="Allen Jones | Software Engineer" />
-    <meta property="og:type" content="Website" />
-    <!-- <meta name="image" property="og:image" content="https://allenjones.dev/images/allenjonesdotdevmetaimage.png" /> -->
-    <meta name="image" property="og:image" content="/images/allenjonesdotdevmetaimage.png" />
-    <meta name="description" property="og:description" content="Allen Jones | Software Engineer Portfolio" />
-    <meta name="author" content="Allen Jones" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01HHPY0Z2H"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allen Jones | Technical Support Engineer</title>
+  <meta name="description" content="Allen Jones is a Technical Support Engineer on the Akana API Platform at Perforce who also builds small, offline-first software. Projects, skills, and contact.">
+  <meta name="author" content="Allen Jones">
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="canonical" href="https://www.allenjones.dev/">
 
-        function gtag() {
-            dataLayer.push(arguments);
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.allenjones.dev/">
+  <meta property="og:title" content="Allen Jones | Technical Support Engineer">
+  <meta property="og:description" content="Support engineer on the Akana API Platform who also ships real software. Projects, skills, and contact.">
+  <meta property="og:image" content="https://www.allenjones.dev/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Terminal window reading: whoami, Allen Jones, Technical Support Engineer">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Set the theme before first paint. A saved choice wins; otherwise dark unless the OS explicitly prefers light. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         }
-        gtag('js', new Date());
+        root.setAttribute('data-theme', t);
+      } catch (e) {
+        root.setAttribute('data-theme', 'dark');
+      }
+      root.classList.add('js');
+    })();
+  </script>
 
-        gtag('config', 'G-01HHPY0Z2H');
-    </script>
-    <!-- End Global site tag (gtag.js) - Google Analytics -->
-    <!-- Hotjar Tracking Code for https://www.allenjones.dev -->
-    <!-- <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 2855456,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script> -->
-    <!-- EndHotjar Tracking Code for https://www.allenjones.dev -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Play&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://kit.fontawesome.com/7443cfac4f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-    </script>
-    <script defer src="./script.js"></script>
-    <title>Allen Jones | Technical Support Engineer</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-01HHPY0Z2H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-01HHPY0Z2H');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/script.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Allen Jones",
+    "jobTitle": "Technical Support Engineer",
+    "url": "https://www.allenjones.dev/",
+    "sameAs": [
+      "https://www.linkedin.com/in/allenmjones/",
+      "https://github.com/mint85"
+    ]
+  }
+  </script>
 </head>
 
-<body class="pt-5" id="top-area">
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom">
-            <div class="container-fluid">
-                <a href="#top-area" class="navbar-brand">
-                    <img src="/images/AJcrop.png" alt="AJ Logo" height="50">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavItems"
-                    aria-controls="navbarNavItems" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavItems">
-                    <ul class="navbar-nav navbar-ul">
-                        <!-- <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a href="#projects-area" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills-area" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact-area" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://docs.google.com/document/d/1oQmn7KsemHLATd0jl2mjA-tEn51FL3nlMG-nwJte0U0/export?format=pdf"
-                                class="nav-link">Resume <i class="fa-solid fa-file-pdf"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main id="main-content-area">
-        <div id="hero" class="container-fluid" style="height: 100vh">
-            <div class="row h-100">
-                <div class="col-md-12 h-100 d-flex flex-column justify-content-center align-items-center">
-                    <div class="align-items-left">
-                        <h6 id="hi">Hi, my name is</h6>
-                        <h1 class="display-2" id="hi">Allen Jones</h1>
-                        <h4 class="text-muted">I am a Technical Support Engineer</h4>
-                        <p>I am also a
-                            <span class="txt-rotate" data-period="2000" data-rotate='[ "creative problem solver", 
-                            "perpetual learner", 
-                            "disc golfer",
-                            "Software Engineer", 
-                            "cat dad", 
-                            "team player",
-                            "gamer",
-                            "cellist" ]'>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr id="projects-area" class="mb-5" style="color: white">
-        <hr class="mb-5" style="color: white">
-        <div class="container" id="projects">
-            <h2>Project Portfolio</h2>
-            <hr class="project-divider-top">
-            <!-- <div class="row">
-                <div class="col-md-5">
-                    <a href="https://hello-project.netlify.app/" target="_blank">
-                        <img src="https://camo.githubusercontent.com/8c8fb416b2348cd5d65e1c9272f73b200bc15a11dd4a0c868cef595196b02b2c/68747470733a2f2f692e696d6775722e636f6d2f37576c397969572e706e67"
-                            alt="Hello Project Screenshot" class="img-fluid mx-auto" width="500" height="500">
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <h3 class="project-heading mt-3">
-                        Hello Project
-                    </h3>
-                    <p class="lead">
-                        MERN stack web app with CRUD operations that allows users to host and display ideas for their
-                        next coding project using an interactive database.
-                        This was a 3-person group project.
-                        <br><br>
-                        As the team's Scrum Master, I made sure we stayed on track to deliver
-                        our project on time, and handled the majority of the Pull Requests on GitHub. I also contributed
-                        to the
-                        Ideas page as well as the CSS.
-                    </p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="live-site-link"
-                                href="https://hello-project.netlify.app/" target="_blank" role="button"><i
-                                    class="fa-solid fa-globe"></i></a>
-                            Live Site
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
-                                href="https://github.com/mint85/hello-project-frontend" target="_blank" role="button"><i
-                                    class="fab fa-github"></i></a>
-                            Code
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-            <hr class="project-divider"> --> 
-            <!-- If anyone is looking at this source code, the above project was a group project that we worked on in my coding bootcamp cohort. 
-                Unfortunately, the backend database that was being used was created by a classmate, and it has stopped working. I have not been 
-                able to contact them to try to get it working again, and I do not have the credentials to try to fix it myself. If I can get it 
-                working again, I will add this back to my Portfolio. The main page is still there, but the Ideas page depends upon the database 
-                to serve the data within. -->
-            <div class="row">
-                <div class="col-md-7">
-                    <h3 class="project-heading">
-                        Disc Golf Course Explorer
-                    </h3>
-                    <p class="lead mb-3">
-                        Full-Stack project using MongoDB, Express, and EJS Templates to display a catalogue of disc golf
-                        courses. There is detailed information about each course, including course photos.
-                    </p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="live-site-link"
-                                href="https://disc-golf-course-explorer.herokuapp.com/" target="_blank" role="button"><i
-                                    class="fa-solid fa-globe"></i></a>
-                            Live Site
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
-                                href="https://github.com/mint85/disc-golf-course-explorer" target="_blank"
-                                role="button"><i class="fab fa-github"></i></a>
-                            Code
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <a href="https://disc-golf-course-explorer.herokuapp.com/" target="_blank">
-                        <img src="https://github.com/mint85/disc-golf-course-explorer/raw/main/public/images/screen1.png"
-                            alt="Disc Golf Course Explorer Screenshot" class="img-fluid mx-auto" width="500"
-                            height="500">
-                    </a>
-                </div>
-            </div>
-            <hr class="project-divider">
-            <div class="row">
-                <div class="col-md-5">
-                    <a href="https://mint85.github.io/Jeopardy-jService-API-Project/" target="_blank">
-                        <img src="https://github.com/mint85/Jeopardy-jService-API-Project/raw/main/images/screen1.png"
-                            alt="Random Jeopardy Clues Screenshot" class="img-fluid mx-auto" width="500" height="500">
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <h3 class="project-headin mt-3">
-                        Random Jeopardy Clues
-                    </h3>
-                    <p class="lead">
-                        This project uses jQuery to access the Jepp API to display random Jeopardy clues & answers.
-                    </p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="live-site-link"
-                                href="https://mint85.github.io/Jeopardy-jService-API-Project/" target="_blank"
-                                role="button"><i class="fa-solid fa-globe"></i></a>
-                            Live Site
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
-                                href="https://github.com/mint85/Jeopardy-jService-API-Project" target="_blank"
-                                role="button"><i class="fab fa-github"></i></a>
-                            Code
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="project-divider">
-            <div class="row">
-                <div class="col-md-7">
-                    <h3 class="project-heading mt-3">
-                        Photo Wall
-                    </h3>
-                    <p class="lead mb-3">
-                        A Python/Django application that lets users upload their favorite photos to create a beautiful
-                        digital 'wall' of photos. Photo Wall stores user's photos in a linked AWS S3 bucket. 
-                    </p>
-                    <p class="lead mb-3">
-                        Users can create their own account to get started, or you may click the "View Example Photo Wall" 
-                        link in the nav bar to view a premade example photowall.
-                    </p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="live-site-link"
-                                href="https://photo-wall-amj.herokuapp.com/" target="_blank" role="button"><i
-                                    class="fa-solid fa-globe"></i></a>
-                            Live Site
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link"
-                                href="https://github.com/mint85/photo-wall" target="_blank" role="button"><i
-                                    class="fab fa-github"></i></a>
-                            Code
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <a href="https://photo-wall-amj.herokuapp.com/" target="_blank">
-                        <img src="https://github.com/mint85/photo-wall/raw/master/main_app/static/images/screenshot1.jpg"
-                            alt="Photo Wall Screenshot" class="img-fluid mx-auto" width="500" height="500">
-                    </a>
-                </div>
-            </div>
-            <hr class="skills-divider" id="skills-area">
-        </div>
-        <div id="skills" class="container">
-            <h2 class="mb-5">Skills</h2>
-            <div class="row row-cols-auto">
-                <div class="col-md-11 mx-auto d-flex flex-wrap justify-content-center">
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor"
-                            class="skill-image" alt="html5" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>HTML</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/css3-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="CSS3" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>CSS</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/javascript-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="JavaScript" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/mysql-original.svg?size=128&color=currentColor"
-                            class="skill-image" alt="html5" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>MySQL</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/mongodb-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="MongoDB" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>MongoDB</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/postgresql-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="PostgreSQL" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>PostgreSQL</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/react-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="React" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>React</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/nodejs-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="Node.js" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>Node.js</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/python-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="Python" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>Python</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/django-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="Django" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>Django</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/jquery-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="jQuery" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>jQuery</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/express-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="Express" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>Express</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/heroku-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="Heroku" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>Heroku</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/git-original.svg?size=75&color=currentColor"
-                            class="skill-image" alt="Git" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>Git</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 px-2 mx-2 my-4 skill-card text-center">
-                        <img src="https://icongr.am/devicon/photoshop-plain.svg?size=75&color=currentColor"
-                            class="skill-image" alt="Photoshop" style="width: 75px; height: auto;">
-                        <div class="text-center">
-                            <p>Photoshop</p>
-                        </div>
-                    </div>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-                </div>
-            </div>
-            <hr class="project-divider">
+  <!-- Inline SVG icon set, referenced with <use href="#icon-name"> -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></symbol>
+    <symbol id="icon-chevron-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="nav__logo" href="/#top" aria-label="Allen Jones, home">
+        <img class="nav__logo-mark" src="/images/ui/laptop-logo.png" alt="" width="160" height="100">
+        <span class="nav__logo-pipe"></span>
+        <span class="nav__logo-text">AJ</span>
+      </a>
+      <div class="nav__controls">
+        <ul class="nav__list" id="site-nav">
+          <li><a class="nav__link" href="/#projects">Projects</a></li>
+          <li><a class="nav__link" href="/#skills">Skills</a></li>
+          <li><a class="nav__link" href="/#contact">Contact</a></li>
+          <li><a class="nav__link" href="/about.html">About</a></li>
+          <li><a class="nav__link" href="/allen-jones-resume.pdf" target="_blank" rel="noopener">Resume <svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg><span class="sr-only">(PDF, opens in a new tab)</span></a></li>
+        </ul>
+        <button class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Light theme">
+          <img class="theme-switch__icon theme-switch__icon--moon" src="/images/ui/dark-mode.png" alt="" width="22" height="22">
+          <span class="theme-switch__track"><span class="theme-switch__knob"></span></span>
+          <img class="theme-switch__icon theme-switch__icon--sun" src="/images/ui/light-mode.png" alt="" width="22" height="22">
+        </button>
+        <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================================================================ Hero -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="container hero__grid">
+        <div class="hero__intro">
+          <p class="hero__prompt" aria-hidden="true">$&gt; hi, my name is</p>
+          <h1 class="hero__name" id="hero-name">Allen Jones</h1>
+          <p class="hero__role">Technical Support Engineer</p>
+          <p class="hero__blurb">
+            Four years keeping the Akana API Platform healthy for Perforce customers: gateway
+            troubleshooting, log forensics, and SQL against production data. On the side I build
+            small software that works offline and respects your privacy. The cats supervise.
+          </p>
+          <p class="sr-only">I am also a creative problem solver, perpetual learner, disc golfer, software engineer, cat dad, team player, and gamer.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="/about.html"><span class="caret" aria-hidden="true">$&gt;</span> whoami<span class="sr-only">: about me</span></a>
+          </div>
         </div>
 
-        <div class="about">
+        <!-- Decorative replay of the intro as a terminal session. Screen readers get the text above instead. -->
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--r"></span>
+            <span class="terminal__dot terminal__dot--y"></span>
+            <span class="terminal__dot terminal__dot--g"></span>
+            <span class="terminal__title">allen@allenjones.dev: ~</span>
+          </div>
+          <div class="terminal__body" id="hero-terminal">
+            <p class="term-line"><span class="term-prompt">$&gt;</span> <span class="term-cmd">whoami</span></p>
+            <p class="term-line term-out term-out--strong">allen</p>
+            <p class="term-line"><span class="term-prompt">$&gt;</span> <span class="term-cmd">cat role.txt</span></p>
+            <p class="term-line term-out">Technical Support Engineer, Akana API Management Platform at Perforce Software</p>
+            <p class="term-line"><span class="term-prompt">$&gt;</span> <span class="term-cmd">ls ~/projects</span></p>
+            <p class="term-line term-out">simple-tip  summit-benchmark  disc-golf-explorer  photo-wall</p>
+            <p class="term-line"><span class="term-prompt">$&gt;</span> <span class="term-cmd">echo "I am also a $ALSO"</span></p>
+            <p class="term-line term-out">I am also a <span class="txt-rotate" data-period="2000" data-rotate='["creative problem solver", "perpetual learner", "disc golfer", "software engineer", "cat dad", "team player", "gamer"]'>creative problem solver</span><span class="cursor"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </div>
-        <div class="container mb-5" id="contact-area">
-            <h3 class="text-center mb-4">Connect With Me:</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 class="mb-3">Send me a direct message</h4>
-                    <form class="d-flex flex-column" name="contact-form" accept-charset="utf-8"
-                        action="https://formspree.io/f/moqrwjkw" method="POST">
-                        <input type="text" name="_gotcha" style="display:none" />
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    Name
-                                </span>
-                            </div>
-                            <input type="text" class="form-control" name="name" id="full-name"
-                                placeholder="First and Last Name" required="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    Email Address
-                                </span>
-                            </div>
-                            <input type="email" class="form-control" name="_replyto" id="email-address"
-                                placeholder="email@domain.com" required="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" style="height: 100%">
-                                    Message
-                                </span>
-                            </div>
-                            <textarea class="form-control" name="message" id="message"
-                                placeholder="Type your message here..." required=""></textarea>
-                        </div>
-                        <input type="hidden" name="_subject" id="email-subject" value="Form Submission">
-                        <div class="col-12">
-                            <input type="submit" value="Send" class="btn btn-success">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="mb-4 mt-4">LinkedIn || GitHub || Resume</h4>
-                    <section class="">
-                        <!-- Linkedin -->
-                        <a class="btn btn-primary btn-lg btn-floating m-1 me-5" id="linkedin-link"
-                            href="https://www.linkedin.com/in/allenmjones/" target="_blank" role="button"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <!-- Github -->
-                        <a class="btn btn-primary btn-lg btn-floating m-1 me-2 ms-2" id="github-link"
-                            href="https://github.com/mint85/" target="_blank" role="button"><i
-                                class="fab fa-github"></i></a>
-                        <!-- Resume -->
-                        <a class="btn btn-primary btn-lg btn-floating m-1 ms-5" id="resume-link"
-                            href="https://docs.google.com/document/d/1oQmn7KsemHLATd0jl2mjA-tEn51FL3nlMG-nwJte0U0/export?format=pdf"
-                            target="_blank" role="button"><i class="fa-solid fa-file-pdf"></i></a>
-                    </section>
-                </div>
+    <!-- ============================================================ Projects -->
+    <section class="section reveal" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section__title" id="projects-title"><span class="section__label">// projects</span>Things I've built</h2>
+        <p class="section__intro">
+          Small, focused apps I actually use, plus two full-stack projects from my bootcamp days that are still running.
+        </p>
+
+        <ul class="project-grid">
+          <li class="project">
+            <a class="project__media project__media--phone" href="https://mint85.github.io/simple-tip/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" style="--shot: url(/images/projects/simple-tip.jpg)">
+              <img src="/images/projects/simple-tip.jpg" alt="" width="720" height="1416" loading="lazy">
+            </a>
+            <div class="project__body">
+              <div class="project__head">
+                <h3 class="project__title">Simple Tip</h3>
+                <span class="status status--live">live</span>
+              </div>
+              <p class="project__desc">
+                A tidy little tip calculator for the moment between the bill and the goodbye. An installable
+                PWA that works fully offline: no ads, no tracking, no network calls. Phone-keypad style bill
+                entry, tip and split steppers, and instant per-person totals. Built with vanilla JavaScript
+                and a service worker.
+              </p>
+              <p class="project__stack">vanilla JS · service worker · PWA · GitHub Pages</p>
+              <div class="project__links">
+                <a class="link-icon" href="https://mint85.github.io/simple-tip/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg>Live site<span class="sr-only"> for Simple Tip</span></a>
+                <a class="link-icon" href="https://github.com/mint85/simple-tip" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>Code<span class="sr-only"> for Simple Tip</span></a>
+              </div>
             </div>
+          </li>
+
+          <li class="project">
+            <a class="project__media project__media--phone" href="https://summit-benchmark.netlify.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" style="--shot: url(/images/projects/summit-benchmark.jpg)">
+              <img src="/images/projects/summit-benchmark.jpg" alt="" width="720" height="1416" loading="lazy">
+            </a>
+            <div class="project__body">
+              <div class="project__head">
+                <h3 class="project__title">Summit Benchmark</h3>
+                <span class="status status--wip">in progress</span>
+              </div>
+              <p class="project__desc">
+                Built so you can keep an eye on altitude in the mountains in real time without a cell signal.
+                An offline-first PWA that shows your live elevation from GPS and calibrates against USGS
+                ground-truth data, made for hikes in national parks with no service. In progress: session
+                logging and elevation charts are on the way.
+              </p>
+              <p class="project__stack">vanilla JS · Geolocation API · USGS data · PWA · Netlify</p>
+              <div class="project__links">
+                <a class="link-icon" href="https://summit-benchmark.netlify.app" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg>Live site<span class="sr-only"> for Summit Benchmark</span></a>
+                <a class="link-icon" href="https://github.com/mint85/summit-benchmark" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>Code<span class="sr-only"> for Summit Benchmark</span></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="project">
+            <a class="project__media" href="https://disc-golf-course-explorer.herokuapp.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="/images/projects/disc-golf.jpg" alt="" width="1000" height="763" loading="lazy">
+            </a>
+            <div class="project__body">
+              <div class="project__head">
+                <h3 class="project__title">Disc Golf Course Explorer</h3>
+                <span class="status status--live">live</span>
+              </div>
+              <p class="project__desc">
+                A full-stack app built with MongoDB, Express, and EJS templates that displays a catalogue of
+                disc golf courses, with detailed info and photos for each one. Signed-in users can create,
+                edit, and manage course entries backed by a MongoDB database.
+              </p>
+              <p class="project__stack">Node · Express · MongoDB · EJS · Heroku</p>
+              <div class="project__links">
+                <a class="link-icon" href="https://disc-golf-course-explorer.herokuapp.com/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg>Live site<span class="sr-only"> for Disc Golf Course Explorer</span></a>
+                <a class="link-icon" href="https://github.com/mint85/disc-golf-course-explorer" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>Code<span class="sr-only"> for Disc Golf Course Explorer</span></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="project">
+            <a class="project__media" href="https://photo-wall-amj.herokuapp.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="/images/projects/photo-wall.jpg" alt="" width="900" height="437" loading="lazy">
+            </a>
+            <div class="project__body">
+              <div class="project__head">
+                <h3 class="project__title">Photo Wall</h3>
+                <span class="status status--live">live</span>
+              </div>
+              <p class="project__desc">
+                A Python/Django app that lets users upload photos to build a digital "wall," with photos stored
+                in a linked AWS S3 bucket. Create an account to start, or use the example wall to look around.
+              </p>
+              <p class="project__stack">Python · Django · PostgreSQL · AWS S3 · Heroku</p>
+              <div class="project__links">
+                <a class="link-icon" href="https://photo-wall-amj.herokuapp.com/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg>Live site<span class="sr-only"> for Photo Wall</span></a>
+                <a class="link-icon" href="https://github.com/mint85/photo-wall" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>Code<span class="sr-only"> for Photo Wall</span></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================== Skills -->
+    <section class="section reveal" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section__title" id="skills-title"><span class="section__label">~/skills</span>What I work with</h2>
+        <p class="section__intro">
+          The tools I reach for every day at my job and in my own projects. 
+        </p>
+
+        <!-- To add a skill, copy one <li class="skill"> below and point it at an SVG in images/icons/. -->
+        
+        <div class="skill-group">
+          <h3 class="skill-group__title">$&gt; ls ~/skills/toolbox</h3>
+          <ul class="skill-list">
+            <li class="skill"><img class="skill__icon" src="/images/icons/bash.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Bash / Shell</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/javascript.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">JavaScript</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/python.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Python</span></li>
+            <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/sql.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">SQL</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/linux.png" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Linux</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/html5.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">HTML</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/css3.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">CSS</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/git.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Git</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/nodejs.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Node.js</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/mongodb.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">MongoDB</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/postman.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Postman</span></li>
+            <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/jmeter.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">JMeter</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/elasticsearch.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Elasticsearch</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/netlify.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Netlify</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/salesforce.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Salesforce</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/tls.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">TLS / Certs</span></li>
+          </ul>
         </div>
-    </main>
-    <div class="container-fluid">
-        <div class="row">
-            <footer class="text-center mt-auto pt-3 footer-custom">
-                <div class="container-fluid">
-                    <section class="mb-4 mt-3">
-                        <div class="back-to-top">
-                            <a class="btn btn-primary btn-floating m-1 ms-3" id="github-link" href="#top-area"
-                                role="button"><i class="fa-solid fa-circle-chevron-up"></i></a>
-                        </div>
-                    </section>
-                </div>
-                <div class="text-center pb-4">
-                    <p>Copyright ©
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>
-                        <br>
-                        <a class="text-reset fw-bold" href="https://www.allenjones.dev">Allen Jones</a>
-                    </p>
-                </div>
-            </footer>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">$&gt; ls ~/skills/apis</h3>
+          <p class="skill-group__note">The core of my support work: what I troubleshoot, trace, and explain every day.</p>
+          <ul class="skill-list">
+            <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/rest.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">REST APIs</span></li>
+            <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/soap.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">SOAP APIs</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/graphql.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">GraphQL APIs</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/gateway.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">API Gateways</span></li>
+          </ul>
         </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">$&gt; ls ~/skills/shipped-with</h3>
+          <ul class="skill-list">
+            <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/django.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Django</span></li>
+            <li class="skill"><img class="skill__icon skill__icon--mono" src="/images/icons/express.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">Express</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/postgresql.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">PostgreSQL</span></li>
+            <li class="skill"><img class="skill__icon" src="/images/icons/react.svg" alt="" width="44" height="44" loading="lazy"><span class="skill__name">React</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= Contact -->
+    <section class="section reveal" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section__title" id="contact-title"><span class="section__label">// contact</span>Let's talk</h2>
+        <p class="section__intro">
+          Open to conversations about roles, support engineering, side projects, or anything else in
+          this corner of the industry. The form goes straight to my inbox.
+        </p>
+
+        <div class="contact-grid">
+          <div>
+            <form class="form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
+              <p class="form__hp">
+                <label>Leave this field empty if you are human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+              </p>
+              <div class="form__field">
+                <label class="form__label" for="contact-name"><span class="caret" aria-hidden="true">&gt;</span> name</label>
+                <input class="form__input" type="text" id="contact-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="contact-email"><span class="caret" aria-hidden="true">&gt;</span> email</label>
+                <input class="form__input" type="email" id="contact-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="contact-message"><span class="caret" aria-hidden="true">&gt;</span> message</label>
+                <textarea class="form__input" id="contact-message" name="message" required></textarea>
+              </div>
+              <div>
+                <button class="btn btn--primary" type="submit"><span class="method method--on-accent" aria-hidden="true">POST</span>Send message</button>
+              </div>
+              <p class="form__status" aria-live="polite" data-endpoint="POST /contact"></p>
+            </form>
+            <div class="form-success" id="form-success" hidden>
+              <p><span class="ok">200 OK</span> message sent</p>
+              <p>Thanks for reaching out. I read every message and will get back to you soon.</p>
+            </div>
+          </div>
+
+          <div class="contact-links">
+            <a class="contact-link" href="https://www.linkedin.com/in/allenmjones/" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+              <span class="contact-link__text"><strong>LinkedIn</strong><small><span class="method">GET</span> linkedin.com/in/allenmjones</small></span>
+              <span class="contact-link__status" aria-hidden="true"></span>
+            </a>
+            <a class="contact-link" href="https://github.com/mint85/" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+              <span class="contact-link__text"><strong>GitHub</strong><small><span class="method">GET</span> github.com/mint85</small></span>
+              <span class="contact-link__status" aria-hidden="true"></span>
+            </a>
+            <a class="contact-link" href="/allen-jones-resume.pdf" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg>
+              <span class="contact-link__text"><strong>Resume</strong><small><span class="method">GET</span> ~/docs/allen-jones-resume.pdf</small></span>
+              <span class="contact-link__status" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__session" aria-hidden="true">
+        <p class="footer__cmd"><span class="term-prompt">$&gt;</span> exit</p>
+        <p class="footer__out">logout<br>Saving session...<br>[Process completed]</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="/#projects">Projects</a>
+        <a href="/#skills">Skills</a>
+        <a href="/#contact">Contact</a>
+        <a href="/about.html">About</a>
+        <a href="https://github.com/mint85/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/allenmjones/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+      <div class="footer__meta">
+        <p class="footer__text">&copy; <span data-year>2026</span> <a href="https://www.allenjones.dev">Allen Jones</a></p>
+        <p class="footer__built">Vanilla HTML, CSS, and JS.<br>No framework, no build step.</p>
+        <a class="footer__top" href="#top"><svg class="icon" aria-hidden="true"><use href="#icon-chevron-up"/></svg>back to top</a>
+      </div>
     </div>
+  </footer>
 </body>
-
 </html>
