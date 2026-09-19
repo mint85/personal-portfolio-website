@@ -1152,6 +1152,11 @@ textarea.form__input {
   object-position: center 40%;
 }
 
+.photo-frame--casual img {
+  aspect-ratio: 5 / 6;
+  object-position: center bottom;
+}
+
 .prose {
   max-width: 68ch;
 }
