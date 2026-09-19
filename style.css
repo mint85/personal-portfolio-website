@@ -1252,6 +1252,31 @@ textarea.form__input {
 .polaroid:nth-child(10n + 9) { --tilt: -3deg; margin-top: 1.75rem; }
 .polaroid:nth-child(10n + 10) { --tilt: 6deg; margin-top: 0.5rem; }
 
+/* Mobile: swap the scattered pile for an even 3-per-row grid so no row is short. */
+@media (max-width: 639px) {
+  .polaroids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem 0.4rem;
+    padding: 1rem 0.25rem 2rem;
+  }
+
+  .polaroids .polaroid {
+    width: auto;
+    margin: 0;
+    align-self: start;
+  }
+
+  .polaroid figure {
+    padding: 0.35rem 0.35rem 0.55rem;
+  }
+
+  .polaroid figcaption {
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+  }
+}
+
 /* --------------------------------------------------------------------------
    10. 404 and thanks pages
    -------------------------------------------------------------------------- */
