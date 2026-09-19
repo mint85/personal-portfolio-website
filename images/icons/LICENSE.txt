@@ -38,3 +38,4 @@ Added for the skills rebuild:
   Original artwork for this site: rest.svg, soap.svg, gateway.svg, tls.svg
 
   salesforce.svg: devicon (MIT). tls.svg: original artwork for this site.
+  elasticsearch.svg: devicon (MIT).
