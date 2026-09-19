@@ -1230,7 +1230,7 @@ textarea.form__input {
 @media (max-width: 639px) {
   .polaroid:hover,
   .polaroid:focus-within {
-    transform: rotate(0deg) translateY(-8px) scale(1.15);
+    transform: rotate(0deg) translateY(-10px) scale(1.4);
   }
 }
 
@@ -1252,27 +1252,29 @@ textarea.form__input {
 .polaroid:nth-child(10n + 9) { --tilt: -3deg; margin-top: 1.75rem; }
 .polaroid:nth-child(10n + 10) { --tilt: 6deg; margin-top: 0.5rem; }
 
-/* Mobile: swap the scattered pile for an even 3-per-row grid so no row is short. */
+/* Mobile: even three-per-row pile of larger prints that overlap slightly, with any
+   trailing prints centered on the last row. */
 @media (max-width: 639px) {
   .polaroids {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.6rem 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.55rem 0;
     padding: 1rem 0.25rem 2rem;
   }
 
   .polaroids .polaroid {
-    width: auto;
-    margin: 0;
-    align-self: start;
+    width: 36%;
+    margin: 0 -2.5%;
   }
 
   .polaroid figure {
-    padding: 0.35rem 0.35rem 0.55rem;
+    padding: 0.4rem 0.4rem 0.6rem;
   }
 
   .polaroid figcaption {
-    font-size: 0.6rem;
+    font-size: 0.62rem;
     margin-top: 0.3rem;
   }
 }
