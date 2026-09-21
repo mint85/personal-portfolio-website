@@ -4,6 +4,49 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   0. Self-hosted fonts (latin subset, woff2)
+   Inter and JetBrains Mono are served from /fonts instead of Google Fonts so
+   the hero text is not gated on a third-party connection (mobile LCP fix).
+   font-display: swap paints fallback text immediately, then swaps. Licenses
+   are in fonts/LICENSE.txt (both SIL Open Font License 1.1).
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-600.woff2") format("woff2");
+}
+
+/* --------------------------------------------------------------------------
    1. Theme tokens
    Deep rebeccapurple is reserved for fills, borders, and glows. Text and links
    on the dark theme use the lightened --accent-text so they clear WCAG AA.

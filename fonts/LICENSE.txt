@@ -1,0 +1,23 @@
+Self-hosted web fonts
+=====================
+
+These woff2 files are the latin subset of two open-source typefaces, served
+locally instead of from Google Fonts. Both are licensed under the SIL Open
+Font License, Version 1.1 (OFL-1.1), which permits self-hosting and
+redistribution.
+
+Inter
+  Files:   inter-400.woff2, inter-600.woff2, inter-800.woff2
+  Author:  Rasmus Andersson
+  License: SIL Open Font License 1.1
+  Source:  https://github.com/rsms/inter
+
+JetBrains Mono
+  Files:   jetbrains-mono-400.woff2, jetbrains-mono-600.woff2
+  Author:  JetBrains
+  License: SIL Open Font License 1.1
+  Source:  https://github.com/JetBrains/JetBrainsMono
+
+The woff2 subsets were obtained via Fontsource (https://fontsource.org),
+which repackages the upstream OFL fonts. Full license text:
+https://openfontlicense.org
