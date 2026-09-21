@@ -233,6 +233,14 @@
     var success = document.getElementById('form-success');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      /* Require every field before sending. The required attributes already
+         block the button path via native validation; this also covers Enter
+         and programmatic submits, and re-shows the browser prompts since we
+         preventDefault before the fetch. */
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
       var submitBtn = form.querySelector('[type="submit"]');
       var endpoint = (status && status.getAttribute('data-endpoint')) || 'POST /contact';
       if (status) { status.textContent = endpoint + ' ...'; status.classList.remove('form__status--error'); }

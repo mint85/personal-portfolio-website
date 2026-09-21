@@ -45,11 +45,10 @@
     gtag('config', 'G-01HHPY0Z2H');
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"></noscript>
+  <!-- Self-hosted fonts (@font-face in style.css). Preload the weights the hero paints first. -->
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-800.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-400.woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <script defer src="/script.js"></script>
 
@@ -123,8 +122,8 @@
           <h1 class="hero__name" id="hero-name">Allen Jones</h1>
           <p class="hero__role">Technical Support Engineer</p>
           <p class="hero__blurb">
-            Four years keeping the Akana API Platform healthy for Perforce customers: gateway
-            troubleshooting, log forensics, and SQL against production data. On the side I build
+            Four years keeping the Akana API Platform healthy for Perforce customers: API gateway
+            troubleshooting, log forensics, SQL against production data. On the side I build
             small software that works offline and respects your privacy. The cats supervise.
           </p>
           <p class="sr-only">I am also a creative problem solver, perpetual learner, disc golfer, software engineer, cat dad, team player, and gamer.</p>
