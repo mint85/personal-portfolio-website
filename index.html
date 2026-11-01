@@ -175,11 +175,12 @@
               </div>
               <p class="project__desc">
                 A tidy little tip calculator for the moment between the bill and the goodbye. An installable
-                PWA that works fully offline: no ads, no tracking, no network calls. Phone-keypad style bill
-                entry, tip and split steppers, and instant per-person totals. Built with vanilla JavaScript
-                and a service worker.
+                PWA that works fully offline: no ads, no tracking, no third-party requests. Phone-keypad bill
+                entry, a tip stepper that switches between percent and whole dollars, a split stepper,
+                press-and-hold to increment, and instant per-person totals. All the money math runs in
+                integer cents and is unit tested.
               </p>
-              <p class="project__stack">vanilla JS · service worker · PWA · GitHub Pages</p>
+              <p class="project__stack">vanilla JS · service worker · PWA · node:test · GitHub Pages</p>
               <div class="project__links">
                 <a class="link-icon" href="https://mint85.github.io/simple-tip/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg>Live site<span class="sr-only"> for Simple Tip</span></a>
                 <a class="link-icon" href="https://github.com/mint85/simple-tip" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>Code<span class="sr-only"> for Simple Tip</span></a>
@@ -197,12 +198,15 @@
                 <span class="status status--wip">in progress</span>
               </div>
               <p class="project__desc">
-                Built so you can keep an eye on altitude in the mountains in real time without a cell signal.
-                An offline-first PWA that shows your live elevation from GPS and calibrates against USGS
-                ground-truth data, made for hikes in national parks with no service. In progress: session
-                logging and elevation charts are on the way.
+                I built this for my wife, Nicole, to keep an eye on real-time altitude while on our 5th wedding
+                anniversary trip through the mountain national parks, where cell service is rare. It's her app: an
+                offline-first PWA that shows live elevation from GPS, calibrates against USGS ground-truth
+                data, and logs readings on the device. It also has a pocket mode that keeps logging active
+                while the phone rides in a pocket. At Bear Lake in Rocky Mountain National Park it read
+                within about 20 ft of the Park Service's trailhead elevation. Next up: data export and
+                elevation charts.
               </p>
-              <p class="project__stack">vanilla JS · Geolocation API · USGS data · PWA · Netlify</p>
+              <p class="project__stack">vanilla JS · Geolocation API · USGS data · IndexedDB · PWA · Netlify</p>
               <div class="project__links">
                 <a class="link-icon" href="https://summit-benchmark.netlify.app" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg>Live site<span class="sr-only"> for Summit Benchmark</span></a>
                 <a class="link-icon" href="https://github.com/mint85/summit-benchmark" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>Code<span class="sr-only"> for Summit Benchmark</span></a>
