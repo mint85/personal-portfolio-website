@@ -1196,8 +1196,13 @@ textarea.form__input {
 }
 
 .photo-frame--casual img {
-  aspect-ratio: 5 / 6;
+  aspect-ratio: 10 / 11;
   object-position: center bottom;
+}
+
+.photo-frame--lake img {
+  aspect-ratio: 5 / 6;
+  object-position: center 75%;
 }
 
 .prose {
@@ -1340,6 +1345,19 @@ textarea.form__input {
 
 .term-link {
   color: var(--accent-text);
+}
+
+/* A nod to The Matrix. */
+.nf-matrix {
+  display: block;
+  margin-top: 0.75rem;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: var(--term-green);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--term-green) 60%, transparent);
+}
+
+[data-theme="light"] .nf-matrix {
+  text-shadow: none;
 }
 
 .nf-cat {
