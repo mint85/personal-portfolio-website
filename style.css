@@ -1196,8 +1196,13 @@ textarea.form__input {
 }
 
 .photo-frame--casual img {
-  aspect-ratio: 5 / 6;
+  aspect-ratio: 10 / 11;
   object-position: center bottom;
+}
+
+.photo-frame--lake img {
+  aspect-ratio: 5 / 6;
+  object-position: center 75%;
 }
 
 .prose {
