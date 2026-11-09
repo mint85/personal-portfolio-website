@@ -1347,6 +1347,19 @@ textarea.form__input {
   color: var(--accent-text);
 }
 
+/* A nod to The Matrix. */
+.nf-matrix {
+  display: block;
+  margin-top: 0.75rem;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: var(--term-green);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--term-green) 60%, transparent);
+}
+
+[data-theme="light"] .nf-matrix {
+  text-shadow: none;
+}
+
 .nf-cat {
   max-width: 760px;
   margin: 2.5rem 0 0;
