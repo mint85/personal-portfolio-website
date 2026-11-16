@@ -193,6 +193,10 @@ button {
   border: 0;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .skip-link {
   position: absolute;
   top: -100px;
